@@ -1,3 +1,4 @@
+#This program is basic practice for OOPS concepts
 class Computer:
     def __init__(self, cpu, ram, disk):
         self.cpu = cpu
