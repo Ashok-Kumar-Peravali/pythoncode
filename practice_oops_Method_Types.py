@@ -14,6 +14,11 @@ class Student:
     def avg(self):
         return (self.m1 + self.m2 + self.m3) / 3
 
+    def get_m1(self): #Accessor
+        return self.m1
+
+    def set_m1(self, value): #Mutator
+        self.m1 = value
     @classmethod
     def get_school(cls):
         return cls.school
@@ -24,6 +29,8 @@ class Student:
 
 s1= Student(78,89,90)
 s2= Student(71,81,93)
+print(s1.get_m1())
+s1.set_m1(98)
 print(s1.avg())
 print(s2.avg())
 
